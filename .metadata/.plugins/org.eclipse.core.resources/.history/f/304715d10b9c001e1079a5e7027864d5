@@ -1,0 +1,11 @@
+package CKYC.ICICI;
+
+public class AllSearch extends BaseClass{
+
+	
+	public void allSearchDownload() {
+		
+		
+		
+	}
+}

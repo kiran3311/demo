@@ -1,0 +1,130 @@
+
+#Input Data-----------------------------------------------------------------------------------------------------------
+URL = http://192.168.100.175:9000/Account/Login
+
+CentralUserLoginId_val =couser
+CentralUserLoginPass_val =Superadmin@123
+
+MakerUserLoginId_val = sachin
+MakerUserLoginPas_val = superadmin
+
+CentralUserLoginRedirectDropOpt_val =Individual
+
+CentralUserDumpFilePath_val = D:\\KiranG\\ICICI Ckyc\\Testing data\\Dump_file\\IN9655_MUM01_24112023_V1.2_IA018014_U00025.txt
+CentralUserCKYCResponseFile_val = D:\\KiranG\\ICICI Ckyc\\Testing data\\CKYC_ResponseFile\\IN1778_21092023_21.txt
+
+CKYCImageUploadExeFilePath_val = D:\\KiranG\\ICICI Ckyc\\ICICI_Patch_1_app_server\\ICICI_Patch_1_app_server\\ImageServiceExe\\ECKYCImageUpload.exe
+
+
+
+#CKYC Generated ID Report Data--------->
+# Select Start Date :
+CentralUserCKYCGeneratedIdReport_StartDateMonth_val= Aug
+CentralUserCKYCGeneratedIdReport_StartDateYear_val = 2023
+CentralUserCKYCGeneratedIdReport_StartDateDate_val = 15
+# Select End Date:
+CentralUserCKYCGeneratedIdReport_EndDateMonth_val = Dec
+CentralUserCKYCGeneratedIdReport_EndDateYear_val = 2023
+CentralUserCKYCGeneratedIdReport_EndDateDate_val = 1
+
+
+#Generate Pending Report Data--------->
+# Select Start Date:
+CentralUserGeneratePendingCustReportStartMonth_val = Jan
+CentralUserGeneratePendingCustReportStartYear_val = 2022
+CentralUserGeneratePendingCustReportStartDate_val = 14
+# Select End Date:
+CentralUserGeneratePendingCustReportEndMonth_val = Jul
+CentralUserGeneratePendingCustReportEndYear_val = 2022
+CentralUserGeneratePendingCustReportEndDate_val = 14
+
+
+# Search and Download Data ------->
+
+#Options available to search are:{ Aadhaar / PAN / VoterID / PassportNO / CKYCID /  DrivingLicense / NREGA }
+MakerUserCKYCManagementSearchBy_val = Aadhaar
+
+#Enter ID no for selected serach By option
+MakerUserCKYCManagementSearchByIdNo_val = 32132dg133213
+
+
+
+
+
+
+
+
+
+
+
+
+#Locators-------------------------------------------------------------------------------------------------------------------------------------
+
+
+#LOCATORS FOR CENTRAL USER
+CentralUserLoginId_loc =//*[@id="txtusername"]
+CentralUserLoginPass_loc =//*[@id="Password"]
+CentralUserLoginBtn_loc =//*[@id="btnSubmit"]
+CentralUserRedirectDrop_loc =//*[@id="ConstitutionType"]
+CentralUserRedirectBtn_loc =//*[@id="loginForm"]/form/div/fieldset/div/div[2]/input
+CentralUserImportTab_loc =/html/body/div/nav/div/div[2]/ul[1]/li[3]/a
+CentralUserImportDropOPt_loc = /html/body/div/nav/div/div[2]/ul[1]/li[3]/ul/li/a
+CentralUserSelectDumpFileBtn_loc = //*[@id="fileToUpload"]
+CentralUserCBSDumpFileUploadBtn_loc = /html/body/div/div[2]/div/div/form/div/div/input[1]
+CentralUserCBSDumpFileFinalUploadBtn_loc = //*[@id="UploadPDFForm"]/center/div/div/button[1]
+
+CentralUserCKYCResponseUploadImportBtn_loc = /html/body/div/div[2]/div/div/form/div/div/input[1]
+CentralUserCKYCResponseFileSelectBtn_loc = //input[@id="fileToUpload"]
+CentralUserCKYCResponseFileFinalUploadBtn_loc = //*[@id="UploadPDFForm"]/center/div/div/button[1]
+CentralUserExportTab_loc = /html/body/div/nav/div/div[2]/ul[1]/li[4]/a
+CentralUserExportDropOpt_loc = /html/body/div/nav/div/div[2]/ul[1]/li[4]/ul/li/a
+CentralUserGenerateCKYCBulkViewRecordBtn_loc = //input[@value="View Records"]
+CentralUserGenerateBulkBtn_loc = //input[@value="Generate Bulk File"]
+
+CentralUserCKYCIdGeneratedReportStartDate_loc = //*[@id="S_Date"]
+CentralUserCKYCIdGeneratedReportEndDate_loc = //*[@id="E_Date"]
+CentralUserCKYCIdGenerateReportMonthSelect_loc = //*[@id="ui-datepicker-div"]/div/div/select[1]
+CentralUserCKYCIdGenerateReportYearSelect_loc = //*[@id="ui-datepicker-div"]/div/div/select[2]
+CentralUserCKYCIdGenerateReportTotalDates_loc = //*[@id="ui-datepicker-div"]/table/tbody/tr/td/a
+CentralUserCKYCIdGenerateReportEndMonthSelect_loc = //*[@id="ui-datepicker-div"]/div/div/select[1]
+ CentralUserCKYCIdGenerateReportEndYearSelect_loc = //*[@id="ui-datepicker-div"]/div/div/select[2]
+ CentralUserCKYCIdGenerateReportEndTotalDates_loc = //*[@id="ui-datepicker-div"]/table/tbody/tr/td/a
+CentralUserCkycGenerateReportGenerateBtn_loc = //*[@id="btnsubmit"]
+
+CentralUserReportTab_loc = /html/body/div[1]/nav/div/div[2]/ul[1]/li[5]/a
+CentralUserReportDropOpts_loc= /html/body/div[1]/nav/div/div[2]/ul[1]/li[5]/ul/li/a
+CentralUserReportGeneratePendingCustReportStartDate_loc =//*[@id="S_Date"]
+CentralUserReportGeneratePendingCustReportStartDateMonth_loc = //*[@id="ui-datepicker-div"]/div/div/select[1]
+CentralUserReportGeneratePendingCustReportStartDateYear_loc= //*[@id="ui-datepicker-div"]/div/div/select[2]
+CentralUserReportGeneratePendingCustReportStartDateTotalDates_loc = //*[@id="ui-datepicker-div"]/table/tbody/tr/td/a
+CentralUserReportGeneratePendingCustReportEndDate_loc = //*[@id="E_Date"]
+CentralUserReportGeneratePendingCustReportEndDateMonth_loc = //*[@id="ui-datepicker-div"]/div/div/select[1]
+CentralUserReportGeneratePendingCustReportEndDateYear_loc= //*[@id="ui-datepicker-div"]/div/div/select[2]
+CentralUserReportGeneratePendingCustReportEndDateTotalDates_loc = //*[@id="ui-datepicker-div"]/table/tbody/tr/td/a
+CentralUserReportGeneratePendingcustReportGenerateBtn_loc = //*[@id="btnsubmit"]
+
+
+#LOCATORS FOR MAKER USER
+MakerUserCKYCManagementTab_loc = /html/body/div/nav/div/div[2]/ul[1]/li[2]/a
+MakerUserCKYCManagementDropList_loc =/html/body/div/nav/div/div[2]/ul[1]/li[2]/ul/li/a
+MakerUserCKYCManagementTableRowList_loc = //*[@id="custgrid"]/tbody/tr 
+MakerUserCKYCManagementEditPendingCust_loc = //*[@id="custgrid"]/tbody/tr/td[7]/a
+MakerUserCKYCManagementPendingCustImg_loc = //*[@id="panel_img"]/img
+MakerUserCKYCManagementPendingCustNextPgArrow_loc = //a[text()=">"]
+
+MakerUserCKYCManagementSearchDownAdhar_loc = //*[@id="UID"]
+MakerUserCKYCManagementSearchDownPan_loc = //*[@id="PAN"]
+MakerUserCKYCManagementSearchDownVoter_loc = //*[@id="VoterID"]
+MakerUserCKYCManagementSearchDownCkycId_loc = //*[@id="CkycID"]
+MakerUserCKYCManagementSearchDownPassportNo_loc = //*[@id="Passport"]
+MakerUserCKYCManagementSearchDownDirvLic_loc = //*[@id="DrivingLicense"]
+MakerUserCKYCManagementSearchDownNREGA_loc = //*[@id="NregaJobCard"]
+MakerUserCKYCManagementSearchDownFinalSearchBtn_loc = /html/body/div/div[2]/form/div/div/fieldset/div[2]/div[4]/input[1]
+MakerUserCKYCManagementSearchDownInputErrorPAN_loc = /html/body/div/div[2]/form/div[2]/div/fieldset/div[1]/div[2]/div[2]/span
+MakerUserCKYCManagementSearchDownInputErrorAdhar_loc = /html/body/div/div[2]/form/div[2]/div/fieldset/div[1]/div[1]/div[2]/span
+MakerUserCKYCManagementSearchDownInputErrorCkyc_loc = /html/body/div/div[2]/form/div[2]/div/fieldset/div[1]/div[4]/div[2]/span
+MakerUserCKYCManagementSearchDownInputErrorPassport_loc = /html/body/div/div[2]/form/div[2]/div/fieldset/div[2]/div[1]/div[2]/span
+MakerUserCKYCManagementSearchDownInputErrorVoterId_loc = /html/body/div/div[2]/form/div[2]/div/fieldset/div[1]/div[3]/div[2]/span
+MakerUserCKYCManagementSearchDownInputErrorDrivingLic_loc =  /html/body/div/div[2]/form/div[2]/div/fieldset/div[2]/div[2]/div[2]/span
+MakerUserCKYCManagementSearchDownInputErrorNREGA_loc =  /html/body/div/div[2]/form/div[2]/div/fieldset/div[2]/div[3]/div[2]/span
+

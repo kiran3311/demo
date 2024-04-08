@@ -1,0 +1,169 @@
+<html>
+<head>
+<title>TestNG:  Default test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Default test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>7/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Dec 21 13:27:03 IST 2023</td>
+</tr>
+<tr><td>Total time:</td><td>33 seconds (33643 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='CKYC.ICICI.CentralUser.ckycIdGeneretedReport()'><b>ckycIdGeneretedReport</b><br>Test class: CKYC.ICICI.CentralUser<br/>
+<a href="#Output-488928549" onClick='toggleBox("Output-488928549", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-488928549" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-488928549">
+Thu Dec 21 13:26:59 IST 2023 - CKYC ID Grnerate Report Test Start<br/>
+Thu Dec 21 13:26:59 IST 2023 - CKYC Generated ID No records found<br/>
+</div>
+</td>
+<td></td>
+<td>8</td>
+<td>CKYC.ICICI.CentralUser@4ed5eb72</td></tr>
+<tr>
+<td title='CKYC.ICICI.CentralUser.runImageService()'><b>runImageService</b><br>Test class: CKYC.ICICI.CentralUser<br/>
+<a href="#Output-1665324560" onClick='toggleBox("Output-1665324560", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1665324560" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1665324560">
+Thu Dec 21 13:26:59 IST 2023 - Image Upload Service exe file executed<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>CKYC.ICICI.CentralUser@4ed5eb72</td></tr>
+<tr>
+<td title='CKYC.ICICI.CentralUser.loginCentralUser()'><b>loginCentralUser</b><br>Test class: CKYC.ICICI.CentralUser<br/>
+<a href="#Output-1760763936" onClick='toggleBox("Output-1760763936", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1760763936" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1760763936">
+Thu Dec 21 13:26:59 IST 2023 - Central user logged in successfully<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>CKYC.ICICI.CentralUser@4ed5eb72</td></tr>
+<tr>
+<td title='CKYC.ICICI.CentralUser.gerneratePendingCustomerReport()'><b>gerneratePendingCustomerReport</b><br>Test class: CKYC.ICICI.CentralUser<br/>
+<a href="#Output-1985011414" onClick='toggleBox("Output-1985011414", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1985011414" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1985011414">
+Thu Dec 21 13:26:59 IST 2023 - Generating pending customer Report<br/>
+Thu Dec 21 13:26:59 IST 2023 - Pending Customer Report : No Records <br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>CKYC.ICICI.CentralUser@4ed5eb72</td></tr>
+<tr>
+<td title='CKYC.ICICI.CentralUser.uploadDumpFile()'><b>uploadDumpFile</b><br>Test class: CKYC.ICICI.CentralUser<br/>
+<a href="#Output-2076462312" onClick='toggleBox("Output-2076462312", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2076462312" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2076462312">
+Thu Dec 21 13:26:59 IST 2023 - Dump file upload started<br/>
+Thu Dec 21 13:26:59 IST 2023 - Dump File detail already exists. Upload new file.<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>CKYC.ICICI.CentralUser@4ed5eb72</td></tr>
+<tr>
+<td title='CKYC.ICICI.CentralUser.generateCkycBulkFile()'><b>generateCkycBulkFile</b><br>Test class: CKYC.ICICI.CentralUser<br/>
+<a href="#Output-999427036" onClick='toggleBox("Output-999427036", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-999427036" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-999427036">
+Thu Dec 21 13:26:59 IST 2023 - CKYC Bulk File Generate Test Started<br/>
+Thu Dec 21 13:26:59 IST 2023 - CKYC Bulk File export failed - No records to export.<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>CKYC.ICICI.CentralUser@4ed5eb72</td></tr>
+<tr>
+<td title='CKYC.ICICI.CentralUser.uploadCkycResponce()'><b>uploadCkycResponce</b><br>Test class: CKYC.ICICI.CentralUser<br/>
+<a href="#Output-1887115844" onClick='toggleBox("Output-1887115844", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1887115844" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1887115844">
+Thu Dec 21 13:26:59 IST 2023 - CKYC Responce upload started<br/>
+Thu Dec 21 13:26:59 IST 2023 - Response File detail already exists. Upload new file.<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>CKYC.ICICI.CentralUser@4ed5eb72</td></tr>
+</table><p>
+</body>
+</html>

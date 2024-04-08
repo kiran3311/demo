@@ -1,0 +1,86 @@
+package CKYC.ICICI;
+
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.testng.Reporter;
+import org.testng.annotations.Test;
+
+public class AllSearch extends BaseClass {
+	WebElement isErrorDisplay;
+
+	@Test(groups = { "MultiSearch" })
+	public void allSearchDownload() {
+
+		log.info("Multi Search and Download Started");
+		Reporter.log(resultTime + " - " + " Multi Search and Download Started");
+		WebElement ckycManagment = driver.findElement(By.xpath(pr.getProperty("MakerUserCKYCManagementTab_loc")));
+		js.executeScript("arguments[0].click()", ckycManagment);
+		List<WebElement> ckycMangList = driver
+				.findElements(By.xpath(pr.getProperty("MakerUserCKYCManagementDropList_loc")));
+		for (WebElement x : ckycMangList) {
+			String dropText = x.getText();
+			if (dropText.contains("Search - Download")) {
+				x.click();
+				break;
+			}
+		}
+
+		String inputIds = prd.getProperty("MakerUserCKYCManagementSearchBy_val");
+
+		if (inputIds.contains(",")) {
+			String[] inputArr = inputIds.split(",");
+			for (String x : inputArr) {
+				System.out.println(x);
+				if (x == "Aadhaar") {
+					driver.findElement(By.xpath(pr.getProperty("MakerUserCKYCManagementSearchDownAdhar_loc")))
+							.sendKeys(prd.getProperty("MakerUserCKYCManagementSearchByIdNo_val"));
+					log.info("Searching with Aadhar no");
+					Reporter.log(resultTime + " - " + "Searching with Aadhar no");
+					System.out.println(resultTime + " - " + "Searching with Aadhar no");
+					try {
+						Thread.sleep(1000);
+						isErrorDisplay = driver.findElement(
+								By.xpath(pr.getProperty("MakerUserCKYCManagementSearchDownInputErrorAdhar_loc")));
+						if (isErrorDisplay.isDisplayed() == true) {
+							log.info(isErrorDisplay.getText());
+							Reporter.log(resultTime + " - " + isErrorDisplay.getText());
+							System.out.println(resultTime + " - " + isErrorDisplay.getText());
+
+						}
+					} catch (Exception e) {
+						System.out.println(resultTime + " - No error element found");
+					}
+				}
+				
+				if(x == "PAN" ) {
+					
+				}
+				
+				if(x == "VoterID" ) {
+					
+				}
+				
+				if(x == "PassportNO" ) {
+					
+				}
+				
+				if(x == "CKYCID" ) {
+					
+				}
+				
+				if(x == "DrivingLicense" ) {
+					
+				}
+				
+				if(x == "NREGA" ) {
+					
+				}
+			}
+
+		}
+
+	}
+
+}

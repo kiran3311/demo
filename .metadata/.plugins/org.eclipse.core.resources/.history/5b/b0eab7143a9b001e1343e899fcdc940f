@@ -1,0 +1,49 @@
+13:25:24.971 [main]INFO  BaseClass - Test Start --------------------------------->>
+13:25:24.976 [main]INFO  BaseClass - Browser Open
+13:25:30.523 [main]INFO  CentralUser - Central user logged in successfully
+13:25:33.111 [main]INFO  CentralUser - Dump file upload started
+13:25:35.454 [main]ERROR CentralUser - Dump File detail already exists. Upload new file.
+13:25:37.650 [main]INFO  CentralUser - Image Upload Service exe file executed
+13:25:37.871 [main]INFO  CentralUser - CKYC Bulk File Generate Test Started.
+13:25:39.858 [main]INFO  CentralUser - CKYC Bulk File export failed - No records to export.
+13:25:42.033 [main]INFO  CentralUser - CKYC Responce upload started
+13:25:44.907 [main]INFO  CentralUser - Response File detail already exists. Upload new file.
+13:25:47.061 [main]INFO  CentralUser - CKYC ID Grnerate Report Test Start
+13:25:53.715 [main]INFO  CentralUser - CKYC Generated ID No records found
+13:25:55.884 [main]INFO  CentralUser - Generating pending customer Report
+13:26:00.229 [main]INFO  MakerUser - Maker User LoggedIn
+13:26:00.889 [main]INFO  MakerUser - Checking Pending customer count
+13:26:01.676 [main]INFO  MakerUser - Total 40 Pending customer found for makers Entry
+13:26:02.816 [main]INFO  MakerUser - Checking images for recent pending customer
+13:26:03.850 [main]INFO  MakerUser - Img uploaded for select customer
+13:26:05.001 [main]INFO  MakerUser - Search and Download Started
+13:26:05.402 [main]INFO  MakerUser - Searching with VoterID
+13:26:11.065 [main]ERROR MakerUser - An error occurred: There was no endpoint listening at http://192.168.100.101:9000/CkycApiService.svc that could accept the message. This is often caused by an incorrect address or SOAP action. See InnerException, if present, for more details.
+13:26:11.744 [main]INFO  BaseClass - Browser closed
+13:26:11.863 [main]INFO  BaseClass - Test End --------------------------------->>
+
+13:30:21.664 [main]INFO  BaseClass - Test Start --------------------------------->>
+13:30:21.668 [main]INFO  BaseClass - Browser Open
+13:30:27.195 [main]INFO  CentralUser - Central user logged in successfully
+13:30:29.731 [main]INFO  CentralUser - Dump file upload started
+13:30:32.301 [main]ERROR CentralUser - Dump File detail already exists. Upload new file.
+13:30:34.536 [main]INFO  CentralUser - Image Upload Service exe file executed
+13:30:34.848 [main]INFO  CentralUser - CKYC Bulk File Generate Test Started.
+13:30:37.112 [main]INFO  CentralUser - CKYC Bulk File export failed - No records to export.
+13:30:39.291 [main]INFO  CentralUser - CKYC Responce upload started
+13:30:42.682 [main]INFO  CentralUser - Response File detail already exists. Upload new file.
+13:30:44.864 [main]INFO  CentralUser - CKYC ID Grnerate Report Test Start
+13:30:51.665 [main]INFO  CentralUser - CKYC Generated ID No records found
+13:30:53.827 [main]INFO  CentralUser - Generating pending customer Report
+13:30:56.967 [main]INFO  CentralUser - Pending Customer Report : No Records 
+13:31:00.420 [main]INFO  MakerUser - Maker User LoggedIn
+13:31:01.106 [main]INFO  MakerUser - Checking Pending customer count
+13:31:02.281 [main]INFO  MakerUser - Total 40 Pending customer found for makers Entry
+13:31:03.421 [main]INFO  MakerUser - Checking images for recent pending customer
+13:31:05.054 [main]INFO  MakerUser - Img uploaded for select customer
+13:31:06.269 [main]INFO  MakerUser - Search and Download Started
+13:31:07.078 [main]INFO  MakerUser - Searching with VoterID
+13:31:12.748 [main]ERROR MakerUser - An error occurred: There was no endpoint listening at http://192.168.100.101:9000/CkycApiService.svc that could accept the message. This is often caused by an incorrect address or SOAP action. See InnerException, if present, for more details.
+13:31:13.449 [main]INFO  BaseClass - Browser closed
+13:31:13.547 [main]INFO  BaseClass - Test End --------------------------------->>
+

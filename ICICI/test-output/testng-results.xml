@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="13" total="24" passed="11" failed="0" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[Thu Dec 21 18:05:05 IST 2023 - Test Start]]>
+    </line>
+    <line>
+      <![CDATA[Thu Dec 21 18:05:05 IST 2023 - Browser Open]]>
+    </line>
+    <line>
+      <![CDATA[Thu Dec 21 18:05:05 IST 2023 - Central user logged in successfully]]>
+    </line>
+    <line>
+      <![CDATA[Thu Dec 21 18:05:05 IST 2023 - Dump file upload started]]>
+    </line>
+    <line>
+      <![CDATA[Thu Dec 21 18:05:05 IST 2023 - Dump File detail already exists. Upload new file.]]>
+    </line>
+    <line>
+      <![CDATA[Thu Dec 21 18:05:05 IST 2023 - Image Upload Service exe file executed]]>
+    </line>
+    <line>
+      <![CDATA[Thu Dec 21 18:05:05 IST 2023 - CKYC Bulk File Generate Test Started]]>
+    </line>
+    <line>
+      <![CDATA[Thu Dec 21 18:05:05 IST 2023 - CKYC Bulk File export failed - No records to export.]]>
+    </line>
+    <line>
+      <![CDATA[Thu Dec 21 18:05:05 IST 2023 - CKYC Responce upload started]]>
+    </line>
+    <line>
+      <![CDATA[Thu Dec 21 18:05:05 IST 2023 - Response File detail already exists. Upload new file.]]>
+    </line>
+    <line>
+      <![CDATA[Thu Dec 21 18:05:05 IST 2023 - CKYC ID Grnerate Report Test Start]]>
+    </line>
+    <line>
+      <![CDATA[Thu Dec 21 18:05:05 IST 2023 - CKYC Generated ID No records found]]>
+    </line>
+    <line>
+      <![CDATA[Thu Dec 21 18:05:05 IST 2023 - Generating pending customer Report]]>
+    </line>
+    <line>
+      <![CDATA[Thu Dec 21 18:05:05 IST 2023 - Pending Customer Report : No Records ]]>
+    </line>
+    <line>
+      <![CDATA[Thu Dec 21 18:05:05 IST 2023 - Maker User LoggedIn]]>
+    </line>
+    <line>
+      <![CDATA[Thu Dec 21 18:05:05 IST 2023 - Checking Pending customer count]]>
+    </line>
+    <line>
+      <![CDATA[Thu Dec 21 18:05:05 IST 2023 - Total 40 Pending customer found for makers Entry]]>
+    </line>
+    <line>
+      <![CDATA[Thu Dec 21 18:05:05 IST 2023 - Checking images for recent pending customer]]>
+    </line>
+    <line>
+      <![CDATA[Thu Dec 21 18:05:05 IST 2023 - Img uploaded for select customer]]>
+    </line>
+    <line>
+      <![CDATA[Thu Dec 21 18:05:05 IST 2023 -  Multi Search and Download Started]]>
+    </line>
+    <line>
+      <![CDATA[Thu Dec 21 18:05:05 IST 2023 - Searching with Aadhar no]]>
+    </line>
+    <line>
+      <![CDATA[Thu Dec 21 18:05:05 IST 2023 - Searching with PAN no]]>
+    </line>
+    <line>
+      <![CDATA[Thu Dec 21 18:05:05 IST 2023 - Searching with VoterID]]>
+    </line>
+    <line>
+      <![CDATA[Thu Dec 21 18:05:05 IST 2023 - Searching with PassportNO]]>
+    </line>
+    <line>
+      <![CDATA[Thu Dec 21 18:05:05 IST 2023 - Searching with CKYCID]]>
+    </line>
+    <line>
+      <![CDATA[Thu Dec 21 18:05:05 IST 2023 - Invalid Aadhaar Number]]>
+    </line>
+    <line>
+      <![CDATA[Thu Dec 21 18:05:05 IST 2023 - Invalid PAN Number]]>
+    </line>
+    <line>
+      <![CDATA[Thu Dec 21 18:05:05 IST 2023 - Invalid Passport Number]]>
+    </line>
+    <line>
+      <![CDATA[Thu Dec 21 18:05:05 IST 2023 - Invalid CKYC Number]]>
+    </line>
+    <line>
+      <![CDATA[Thu Dec 21 18:05:05 IST 2023 - Browser closed]]>
+    </line>
+    <line>
+      <![CDATA[Thu Dec 21 18:05:05 IST 2023 - Test End]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2023-12-21T18:05:10 IST" name="Suite" finished-at="2023-12-21T18:06:39 IST" duration-ms="88553">
+    <groups>
+      <group name="Search and Download">
+        <method signature="MakerUser.makerUserLogin()[pri:0, instance:CKYC.ICICI.MakerUser@3a94964]" name="makerUserLogin" class="CKYC.ICICI.MakerUser"/>
+      </group> <!-- Search and Download -->
+      <group name="New dump Upload and Process">
+        <method signature="CentralUser.loginCentralUser()[pri:-1, instance:CKYC.ICICI.CentralUser@b40bb6e]" name="loginCentralUser" class="CKYC.ICICI.CentralUser"/>
+        <method signature="CentralUser.uploadDumpFile()[pri:2, instance:CKYC.ICICI.CentralUser@b40bb6e]" name="uploadDumpFile" class="CKYC.ICICI.CentralUser"/>
+        <method signature="CentralUser.runImageService()[pri:3, instance:CKYC.ICICI.CentralUser@b40bb6e]" name="runImageService" class="CKYC.ICICI.CentralUser"/>
+        <method signature="CentralUser.generateCkycBulkFile()[pri:4, instance:CKYC.ICICI.CentralUser@b40bb6e]" name="generateCkycBulkFile" class="CKYC.ICICI.CentralUser"/>
+      </group> <!-- New dump Upload and Process -->
+      <group name="CKYC Id Generated Report">
+        <method signature="CentralUser.loginCentralUser()[pri:-1, instance:CKYC.ICICI.CentralUser@b40bb6e]" name="loginCentralUser" class="CKYC.ICICI.CentralUser"/>
+        <method signature="CentralUser.ckycIdGeneretedReport()[pri:6, instance:CKYC.ICICI.CentralUser@b40bb6e]" name="ckycIdGeneretedReport" class="CKYC.ICICI.CentralUser"/>
+      </group> <!-- CKYC Id Generated Report -->
+      <group name="Upload Response">
+        <method signature="CentralUser.loginCentralUser()[pri:-1, instance:CKYC.ICICI.CentralUser@b40bb6e]" name="loginCentralUser" class="CKYC.ICICI.CentralUser"/>
+        <method signature="CentralUser.uploadCkycResponce()[pri:5, instance:CKYC.ICICI.CentralUser@b40bb6e]" name="uploadCkycResponce" class="CKYC.ICICI.CentralUser"/>
+      </group> <!-- Upload Response -->
+      <group name="Check Draft Cust">
+        <method signature="MakerUser.makerUserLogin()[pri:0, instance:CKYC.ICICI.MakerUser@3a94964]" name="makerUserLogin" class="CKYC.ICICI.MakerUser"/>
+        <method signature="MakerUser.pendingCustomerDetails()[pri:1, instance:CKYC.ICICI.MakerUser@3a94964]" name="pendingCustomerDetails" class="CKYC.ICICI.MakerUser"/>
+        <method signature="MakerUser.pendingCustIsImgUpload()[pri:2, instance:CKYC.ICICI.MakerUser@3a94964]" name="pendingCustIsImgUpload" class="CKYC.ICICI.MakerUser"/>
+      </group> <!-- Check Draft Cust -->
+      <group name="MultiSearch">
+        <method signature="MakerUser.makerUserLogin()[pri:0, instance:CKYC.ICICI.MakerUser@3a94964]" name="makerUserLogin" class="CKYC.ICICI.MakerUser"/>
+        <method signature="AllSearch.allSearchDownload()[pri:2, instance:CKYC.ICICI.AllSearch@5049d8b2]" name="allSearchDownload" class="CKYC.ICICI.AllSearch"/>
+      </group> <!-- MultiSearch -->
+      <group name="Pending Cust Report">
+        <method signature="CentralUser.loginCentralUser()[pri:-1, instance:CKYC.ICICI.CentralUser@b40bb6e]" name="loginCentralUser" class="CKYC.ICICI.CentralUser"/>
+        <method signature="CentralUser.gerneratePendingCustomerReport()[pri:7, instance:CKYC.ICICI.CentralUser@b40bb6e]" name="gerneratePendingCustomerReport" class="CKYC.ICICI.CentralUser"/>
+      </group> <!-- Pending Cust Report -->
+    </groups>
+    <test started-at="2023-12-21T18:05:10 IST" name="Test" finished-at="2023-12-21T18:06:39 IST" duration-ms="88553">
+      <class name="CKYC.ICICI.CentralUser">
+        <test-method signature="loginCentralUser()[pri:-1, instance:CKYC.ICICI.CentralUser@b40bb6e]" started-at="2023-12-21T18:05:10 IST" name="loginCentralUser" finished-at="2023-12-21T18:05:38 IST" duration-ms="27518" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Thu Dec 21 18:05:05 IST 2023 - Central user logged in successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- loginCentralUser -->
+        <test-method is-config="true" signature="getREsult(org.testng.ITestResult)[pri:0, instance:CKYC.ICICI.CentralUser@b40bb6e]" started-at="2023-12-21T18:05:38 IST" name="getREsult" finished-at="2023-12-21T18:05:38 IST" duration-ms="716" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginCentralUser status=SUCCESS method=CentralUser.loginCentralUser()[pri:-1, instance:CKYC.ICICI.CentralUser@b40bb6e] output=Thu Dec 21 18:05:05 IST 2023 - Central user logged in successfully]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getREsult -->
+        <test-method signature="uploadDumpFile()[pri:2, instance:CKYC.ICICI.CentralUser@b40bb6e]" started-at="2023-12-21T18:05:38 IST" name="uploadDumpFile" finished-at="2023-12-21T18:05:45 IST" duration-ms="6780" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Thu Dec 21 18:05:05 IST 2023 - Dump file upload started]]>
+            </line>
+            <line>
+              <![CDATA[Thu Dec 21 18:05:05 IST 2023 - Dump File detail already exists. Upload new file.]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- uploadDumpFile -->
+        <test-method is-config="true" signature="getREsult(org.testng.ITestResult)[pri:0, instance:CKYC.ICICI.CentralUser@b40bb6e]" started-at="2023-12-21T18:05:45 IST" name="getREsult" finished-at="2023-12-21T18:05:45 IST" duration-ms="149" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=uploadDumpFile status=SUCCESS method=CentralUser.uploadDumpFile()[pri:2, instance:CKYC.ICICI.CentralUser@b40bb6e] output=Thu Dec 21 18:05:05 IST 2023 - Dump file upload started]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getREsult -->
+        <test-method signature="runImageService()[pri:3, instance:CKYC.ICICI.CentralUser@b40bb6e]" started-at="2023-12-21T18:05:45 IST" name="runImageService" finished-at="2023-12-21T18:05:47 IST" duration-ms="1242" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Thu Dec 21 18:05:05 IST 2023 - Image Upload Service exe file executed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- runImageService -->
+        <test-method is-config="true" signature="getREsult(org.testng.ITestResult)[pri:0, instance:CKYC.ICICI.CentralUser@b40bb6e]" started-at="2023-12-21T18:05:47 IST" name="getREsult" finished-at="2023-12-21T18:05:47 IST" duration-ms="87" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=runImageService status=SUCCESS method=CentralUser.runImageService()[pri:3, instance:CKYC.ICICI.CentralUser@b40bb6e] output=Thu Dec 21 18:05:05 IST 2023 - Image Upload Service exe file executed]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getREsult -->
+        <test-method signature="generateCkycBulkFile()[pri:4, instance:CKYC.ICICI.CentralUser@b40bb6e]" started-at="2023-12-21T18:05:47 IST" name="generateCkycBulkFile" finished-at="2023-12-21T18:05:51 IST" duration-ms="4722" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Thu Dec 21 18:05:05 IST 2023 - CKYC Bulk File Generate Test Started]]>
+            </line>
+            <line>
+              <![CDATA[Thu Dec 21 18:05:05 IST 2023 - CKYC Bulk File export failed - No records to export.]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- generateCkycBulkFile -->
+        <test-method is-config="true" signature="getREsult(org.testng.ITestResult)[pri:0, instance:CKYC.ICICI.CentralUser@b40bb6e]" started-at="2023-12-21T18:05:51 IST" name="getREsult" finished-at="2023-12-21T18:05:52 IST" duration-ms="166" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=generateCkycBulkFile status=SUCCESS method=CentralUser.generateCkycBulkFile()[pri:4, instance:CKYC.ICICI.CentralUser@b40bb6e] output=Thu Dec 21 18:05:05 IST 2023 - CKYC Bulk File Generate Test Started]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getREsult -->
+        <test-method signature="uploadCkycResponce()[pri:5, instance:CKYC.ICICI.CentralUser@b40bb6e]" started-at="2023-12-21T18:05:52 IST" name="uploadCkycResponce" finished-at="2023-12-21T18:05:57 IST" duration-ms="5036" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Thu Dec 21 18:05:05 IST 2023 - CKYC Responce upload started]]>
+            </line>
+            <line>
+              <![CDATA[Thu Dec 21 18:05:05 IST 2023 - Response File detail already exists. Upload new file.]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- uploadCkycResponce -->
+        <test-method is-config="true" signature="getREsult(org.testng.ITestResult)[pri:0, instance:CKYC.ICICI.CentralUser@b40bb6e]" started-at="2023-12-21T18:05:57 IST" name="getREsult" finished-at="2023-12-21T18:05:57 IST" duration-ms="120" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=uploadCkycResponce status=SUCCESS method=CentralUser.uploadCkycResponce()[pri:5, instance:CKYC.ICICI.CentralUser@b40bb6e] output=Thu Dec 21 18:05:05 IST 2023 - CKYC Responce upload started]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getREsult -->
+        <test-method signature="ckycIdGeneretedReport()[pri:6, instance:CKYC.ICICI.CentralUser@b40bb6e]" started-at="2023-12-21T18:05:57 IST" name="ckycIdGeneretedReport" finished-at="2023-12-21T18:06:07 IST" duration-ms="9834" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Thu Dec 21 18:05:05 IST 2023 - CKYC ID Grnerate Report Test Start]]>
+            </line>
+            <line>
+              <![CDATA[Thu Dec 21 18:05:05 IST 2023 - CKYC Generated ID No records found]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- ckycIdGeneretedReport -->
+        <test-method is-config="true" signature="getREsult(org.testng.ITestResult)[pri:0, instance:CKYC.ICICI.CentralUser@b40bb6e]" started-at="2023-12-21T18:06:07 IST" name="getREsult" finished-at="2023-12-21T18:06:07 IST" duration-ms="159" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=ckycIdGeneretedReport status=SUCCESS method=CentralUser.ckycIdGeneretedReport()[pri:6, instance:CKYC.ICICI.CentralUser@b40bb6e] output=Thu Dec 21 18:05:05 IST 2023 - CKYC ID Grnerate Report Test Start]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getREsult -->
+        <test-method signature="gerneratePendingCustomerReport()[pri:7, instance:CKYC.ICICI.CentralUser@b40bb6e]" started-at="2023-12-21T18:06:07 IST" name="gerneratePendingCustomerReport" finished-at="2023-12-21T18:06:12 IST" duration-ms="5420" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Thu Dec 21 18:05:05 IST 2023 - Generating pending customer Report]]>
+            </line>
+            <line>
+              <![CDATA[Thu Dec 21 18:05:05 IST 2023 - Pending Customer Report : No Records ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- gerneratePendingCustomerReport -->
+        <test-method is-config="true" signature="getREsult(org.testng.ITestResult)[pri:0, instance:CKYC.ICICI.CentralUser@b40bb6e]" started-at="2023-12-21T18:06:12 IST" name="getREsult" finished-at="2023-12-21T18:06:12 IST" duration-ms="95" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=gerneratePendingCustomerReport status=SUCCESS method=CentralUser.gerneratePendingCustomerReport()[pri:7, instance:CKYC.ICICI.CentralUser@b40bb6e] output=Thu Dec 21 18:05:05 IST 2023 - Generating pending customer Report]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getREsult -->
+      </class> <!-- CKYC.ICICI.CentralUser -->
+      <class name="CKYC.ICICI.BaseClass">
+        <test-method is-config="true" signature="invokeBrowser()[pri:0, instance:CKYC.ICICI.BaseClass@1c9f0a20]" started-at="2023-12-21T18:05:07 IST" name="invokeBrowser" finished-at="2023-12-21T18:05:10 IST" duration-ms="3466" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Thu Dec 21 18:05:05 IST 2023 - Test Start]]>
+            </line>
+            <line>
+              <![CDATA[Thu Dec 21 18:05:05 IST 2023 - Browser Open]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- invokeBrowser -->
+        <test-method is-config="true" signature="startReport()[pri:0, instance:CKYC.ICICI.BaseClass@1c9f0a20]" started-at="2023-12-21T18:05:10 IST" name="startReport" finished-at="2023-12-21T18:05:10 IST" duration-ms="186" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startReport -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:CKYC.ICICI.BaseClass@1c9f0a20]" started-at="2023-12-21T18:06:38 IST" name="tearDown" finished-at="2023-12-21T18:06:39 IST" duration-ms="56" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="closure()[pri:0, instance:CKYC.ICICI.BaseClass@1c9f0a20]" started-at="2023-12-21T18:06:39 IST" name="closure" finished-at="2023-12-21T18:06:39 IST" duration-ms="190" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Thu Dec 21 18:05:05 IST 2023 - Browser closed]]>
+            </line>
+            <line>
+              <![CDATA[Thu Dec 21 18:05:05 IST 2023 - Test End]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- closure -->
+      </class> <!-- CKYC.ICICI.BaseClass -->
+      <class name="CKYC.ICICI.AllSearch">
+        <test-method signature="allSearchDownload()[pri:2, instance:CKYC.ICICI.AllSearch@5049d8b2]" started-at="2023-12-21T18:06:21 IST" name="allSearchDownload" finished-at="2023-12-21T18:06:38 IST" duration-ms="17106" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Thu Dec 21 18:05:05 IST 2023 -  Multi Search and Download Started]]>
+            </line>
+            <line>
+              <![CDATA[Thu Dec 21 18:05:05 IST 2023 - Searching with Aadhar no]]>
+            </line>
+            <line>
+              <![CDATA[Thu Dec 21 18:05:05 IST 2023 - Searching with PAN no]]>
+            </line>
+            <line>
+              <![CDATA[Thu Dec 21 18:05:05 IST 2023 - Searching with VoterID]]>
+            </line>
+            <line>
+              <![CDATA[Thu Dec 21 18:05:05 IST 2023 - Searching with PassportNO]]>
+            </line>
+            <line>
+              <![CDATA[Thu Dec 21 18:05:05 IST 2023 - Searching with CKYCID]]>
+            </line>
+            <line>
+              <![CDATA[Thu Dec 21 18:05:05 IST 2023 - Invalid Aadhaar Number]]>
+            </line>
+            <line>
+              <![CDATA[Thu Dec 21 18:05:05 IST 2023 - Invalid PAN Number]]>
+            </line>
+            <line>
+              <![CDATA[Thu Dec 21 18:05:05 IST 2023 - Invalid Passport Number]]>
+            </line>
+            <line>
+              <![CDATA[Thu Dec 21 18:05:05 IST 2023 - Invalid CKYC Number]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- allSearchDownload -->
+        <test-method is-config="true" signature="getREsult(org.testng.ITestResult)[pri:0, instance:CKYC.ICICI.AllSearch@5049d8b2]" started-at="2023-12-21T18:06:38 IST" name="getREsult" finished-at="2023-12-21T18:06:38 IST" duration-ms="57" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=allSearchDownload status=SUCCESS method=AllSearch.allSearchDownload()[pri:2, instance:CKYC.ICICI.AllSearch@5049d8b2] output=Thu Dec 21 18:05:05 IST 2023 -  Multi Search and Download Started]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getREsult -->
+      </class> <!-- CKYC.ICICI.AllSearch -->
+      <class name="CKYC.ICICI.MakerUser">
+        <test-method signature="makerUserLogin()[pri:0, instance:CKYC.ICICI.MakerUser@3a94964]" started-at="2023-12-21T18:06:12 IST" name="makerUserLogin" finished-at="2023-12-21T18:06:15 IST" duration-ms="2223" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Thu Dec 21 18:05:05 IST 2023 - Maker User LoggedIn]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- makerUserLogin -->
+        <test-method is-config="true" signature="getREsult(org.testng.ITestResult)[pri:0, instance:CKYC.ICICI.MakerUser@3a94964]" started-at="2023-12-21T18:06:15 IST" name="getREsult" finished-at="2023-12-21T18:06:15 IST" duration-ms="63" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=makerUserLogin status=SUCCESS method=MakerUser.makerUserLogin()[pri:0, instance:CKYC.ICICI.MakerUser@3a94964] output=Thu Dec 21 18:05:05 IST 2023 - Maker User LoggedIn]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getREsult -->
+        <test-method signature="pendingCustomerDetails()[pri:1, instance:CKYC.ICICI.MakerUser@3a94964]" started-at="2023-12-21T18:06:15 IST" name="pendingCustomerDetails" finished-at="2023-12-21T18:06:17 IST" duration-ms="2431" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Thu Dec 21 18:05:05 IST 2023 - Checking Pending customer count]]>
+            </line>
+            <line>
+              <![CDATA[Thu Dec 21 18:05:05 IST 2023 - Total 40 Pending customer found for makers Entry]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- pendingCustomerDetails -->
+        <test-method is-config="true" signature="getREsult(org.testng.ITestResult)[pri:0, instance:CKYC.ICICI.MakerUser@3a94964]" started-at="2023-12-21T18:06:17 IST" name="getREsult" finished-at="2023-12-21T18:06:17 IST" duration-ms="60" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=pendingCustomerDetails status=SUCCESS method=MakerUser.pendingCustomerDetails()[pri:1, instance:CKYC.ICICI.MakerUser@3a94964] output=Thu Dec 21 18:05:05 IST 2023 - Checking Pending customer count]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getREsult -->
+        <test-method signature="pendingCustIsImgUpload()[pri:2, instance:CKYC.ICICI.MakerUser@3a94964]" started-at="2023-12-21T18:06:17 IST" name="pendingCustIsImgUpload" finished-at="2023-12-21T18:06:21 IST" duration-ms="4045" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Thu Dec 21 18:05:05 IST 2023 - Checking images for recent pending customer]]>
+            </line>
+            <line>
+              <![CDATA[Thu Dec 21 18:05:05 IST 2023 - Img uploaded for select customer]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- pendingCustIsImgUpload -->
+        <test-method is-config="true" signature="getREsult(org.testng.ITestResult)[pri:0, instance:CKYC.ICICI.MakerUser@3a94964]" started-at="2023-12-21T18:06:21 IST" name="getREsult" finished-at="2023-12-21T18:06:21 IST" duration-ms="90" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=pendingCustIsImgUpload status=SUCCESS method=MakerUser.pendingCustIsImgUpload()[pri:2, instance:CKYC.ICICI.MakerUser@3a94964] output=Thu Dec 21 18:05:05 IST 2023 - Checking images for recent pending customer]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getREsult -->
+      </class> <!-- CKYC.ICICI.MakerUser -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

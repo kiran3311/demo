@@ -1,0 +1,30 @@
+package CKYC.ICICI;
+
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.testng.Reporter;
+import org.testng.annotations.Test;
+
+public class AllSearch extends BaseClass{
+
+	@Test
+	public void allSearchDownload() {
+		
+		log.info("Multi Search and Download Started");
+		Reporter.log(resultTime + " - "+" Multi Search and Download Started");
+		WebElement ckycManagment = driver.findElement(By.xpath(pr.getProperty("MakerUserCKYCManagementTab_loc")));
+		js.executeScript("arguments[0].click()", ckycManagment);
+		List<WebElement> ckycMangList = driver
+				.findElements(By.xpath(pr.getProperty("MakerUserCKYCManagementDropList_loc")));
+		for (WebElement x : ckycMangList) {
+			String dropText = x.getText();
+			if (dropText.contains("Search - Download")) {
+				x.click();
+				break;
+			}
+		}
+		
+	}
+}

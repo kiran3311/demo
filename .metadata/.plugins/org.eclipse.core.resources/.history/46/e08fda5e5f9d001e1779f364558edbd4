@@ -1,0 +1,140 @@
+package CKYC.ICICI;
+
+import java.awt.AWTException;
+import java.awt.HeadlessException;
+import java.io.IOException;
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
+import org.testng.Reporter;
+import org.testng.annotations.Test;
+
+public class AllSearch extends BaseClass {
+	WebElement isErrorDisplay;
+	@Test(priority = -1)
+public void makerUserLogin() throws HeadlessException, IOException, AWTException, InterruptedException {
+		
+
+		driver.get(prd.getProperty("URL"));
+		driver.findElement(By.xpath(pr.getProperty("CentralUserLoginId_loc")))
+				.sendKeys(prd.getProperty("MakerUserLoginId_val"));
+		driver.findElement(By.xpath(pr.getProperty("CentralUserLoginPass_loc")))
+				.sendKeys(prd.getProperty("MakerUserLoginPas_val"));
+		driver.findElement(By.xpath(pr.getProperty("CentralUserLoginBtn_loc"))).click();
+		WebElement redirectDrop = driver.findElement(By.xpath(pr.getProperty("CentralUserRedirectDrop_loc")));
+		Select selectRedirectDrop = new Select(redirectDrop);
+		selectRedirectDrop.selectByVisibleText(prd.getProperty("CentralUserLoginRedirectDropOpt_val"));
+		driver.findElement(By.xpath(pr.getProperty("CentralUserRedirectBtn_loc"))).click();
+		System.out.println(resultTime + " - Maker loggedin");
+
+		log.info("Maker User LoggedIn");
+		Reporter.log(resultTime + " - "+"Maker User LoggedIn");
+		Thread.sleep(500);
+		ss();
+		//System.out.println(d);
+
+	}
+
+	@Test(groups = { "MultiSearch" })
+	public void allSearchDownload() throws InterruptedException {
+
+		log.info("Multi Search and Download Started");
+		Reporter.log(resultTime + " - " + " Multi Search and Download Started");
+		WebElement ckycManagment = driver.findElement(By.xpath(pr.getProperty("MakerUserCKYCManagementTab_loc")));
+		js.executeScript("arguments[0].click()", ckycManagment);
+		List<WebElement> ckycMangList = driver
+				.findElements(By.xpath(pr.getProperty("MakerUserCKYCManagementDropList_loc")));
+		for (WebElement x : ckycMangList) {
+			String dropText = x.getText();
+			if (dropText.contains("Search - Download")) {
+				x.click();
+				break;
+			}
+		}
+
+		String inputIds = prd.getProperty("MakerUserCKYCManagementSearchBy_val");
+
+		if (inputIds.contains(",")) {
+			String[] inputArr = inputIds.split(",");
+			for (String x : inputArr) {
+				
+				if (x == "Aadhaar") {
+					Thread.sleep(500);
+					driver.findElement(By.xpath(pr.getProperty("MakerUserCKYCManagementSearchDownAdhar_loc")))
+							.sendKeys(prd.getProperty("MakerUserCKYCManagementSearchByIdNo_val"));
+					log.info("Searching with Aadhar no");
+					Reporter.log(resultTime + " - " + "Searching with Aadhar no");
+					System.out.println(resultTime + " - " + "Searching with Aadhar no");
+				
+				}
+				
+				if(x == "PAN" ) {
+					Thread.sleep(500);
+					driver.findElement(By.xpath(pr.getProperty("MakerUserCKYCManagementSearchDownPan_loc")))
+					.sendKeys(prd.getProperty("MakerUserCKYCManagementSearchByIdNo_val"));
+			log.info("Searching with PAN no");
+			Reporter.log(resultTime + " - "+"Searching with PAN no");
+			System.out.println(resultTime + " - "+"Searching with PAN no");
+			
+		
+				}
+				
+				if(x == "VoterID" ) {
+					driver.findElement(By.xpath(pr.getProperty("MakerUserCKYCManagementSearchDownVoter_loc")))
+					.sendKeys(prd.getProperty("MakerUserCKYCManagementSearchByIdNo_val"));
+			log.info("Searching with VoterID");
+			Reporter.log(resultTime + " - "+"Searching with VoterID");
+			System.out.println(resultTime + " - "+"Searching with VoterID");
+		
+	
+				}
+				
+				if(x == "PassportNO" ) {
+					driver.findElement(By.xpath(pr.getProperty("MakerUserCKYCManagementSearchDownPassportNo_loc")))
+					.sendKeys(prd.getProperty("MakerUserCKYCManagementSearchByIdNo_val"));
+			log.info("Searching with PassportNO");
+			Reporter.log(resultTime + " - "+"Searching with PassportNO");
+			System.out.println(resultTime + " - "+"Searching with PassportNO");
+			
+		
+				}
+				
+				if(x == "CKYCID" ) {
+					driver.findElement(By.xpath(pr.getProperty("MakerUserCKYCManagementSearchDownCkycId_loc")))
+					.sendKeys(prd.getProperty("MakerUserCKYCManagementSearchByIdNo_val"));
+			log.info("Searching with CKYCID");
+			Reporter.log(resultTime + " - "+"Searching with CKYCID");
+			System.out.println(resultTime + " - "+"Searching with CKYCID");
+			
+		
+				}
+				
+				if(x == "DrivingLicense" ) {
+					driver.findElement(By.xpath(pr.getProperty("MakerUserCKYCManagementSearchDownDirvLic_loc")))
+					.sendKeys(prd.getProperty("MakerUserCKYCManagementSearchByIdNo_val"));
+			log.info("Searching with DrivingLicense");
+			Reporter.log(resultTime + " - "+"Searching with DrivingLicense");
+			System.out.println(resultTime + " - "+"Searching with DrivingLicense");
+			
+		
+				}
+				
+				if(x == "NREGA" ) {
+					driver.findElement(By.xpath(pr.getProperty("MakerUserCKYCManagementSearchDownNREGA_loc")))
+					.sendKeys(prd.getProperty("MakerUserCKYCManagementSearchByIdNo_val"));
+			log.info("Searching with NREGA");
+			Reporter.log(resultTime + " - "+"Searching with NREGA");
+			System.out.println(resultTime + " - "+"Searching with NREGA");
+		
+		
+				}
+				System.out.println(x);
+			}
+
+		}
+
+	}
+
+}

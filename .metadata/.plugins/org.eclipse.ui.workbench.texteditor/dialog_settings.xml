@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item key="wrap" value="true"/>
+		<item key="casesensitive" value="false"/>
+		<item key="wholeword" value="false"/>
+		<item key="incremental" value="false"/>
+		<item key="isRegEx" value="false"/>
+		<item key="selection" value="CentralUserCKYCGeneratedIdReport_EndDateDate_val"/>
+		<list key="findhistory">
+			<item value="CentralUserCKYCGeneratedIdReport_EndDateDate_val"/>
+			<item value="MakerUserCKYCManagementSearchDownInputError_loc"/>
+			<item value="/html/body/div/div[2]/form/div[2]/div/fieldset/div[1]/div[2]/div[2]/span"/>
+			<item value="CentralUserImportUploadCBSDump_val"/>
+			<item value="CentralUserGeneratePendingCustReportEndMonth_val"/>
+			<item value="CentralUserCKYCGeneratedIdReport_EndDateYear_val"/>
+			<item value="CentralUserCKYCIdGenerateReportEndYearSelect_loc"/>
+			<item value="CentralUserCKYCGeneratedIdReport_EndDateMonth_val"/>
+			<item value="CentralUserCKYCIdGenerateReportEndMonthSelect_loc"/>
+			<item value="CentralUserCKYCIdGeneratedReportEndDate_loc"/>
+			<item value="CentralUserCKYCGeneratedIdReport_StartDateYear_val"/>
+			<item value="CentralUserCKYCIdGenerateReportYearSelect_loc"/>
+			<item value="//*[@id=&quot;UploadPDFForm&quot;]/center/div/div/button[1]"/>
+			<item value="CentralUserLoginId_loc"/>
+		</list>
+		<list key="replacehistory">
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="47"/>
+		<item key="DIALOG_Y_ORIGIN" value="362"/>
+		<item key="DIALOG_WIDTH" value="322"/>
+		<item key="DIALOG_HEIGHT" value="391"/>
+		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+	</section>
+</section>
